@@ -27,7 +27,6 @@
   "dependencies": {
     "3": "^2.1.0",
     "esm": "^3.2.25",
-    "sqlite": "^4.0.23",
     "sqlite3": "^5.0.2",
     "superagent": "^6.1.0"
   }

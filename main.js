@@ -1,3 +1,5 @@
 import {
-  Database
-} from './utils/sqlite3/accessors/initialize'
+  checkValidNumber
+} from "./core/generators/numbers/numberChecker";
+let value = await checkValidNumber
+console.log(value)
