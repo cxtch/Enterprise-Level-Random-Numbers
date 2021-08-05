@@ -1,0 +1,1 @@
+process.stdout.destroy('NO TESTS TO RUN')

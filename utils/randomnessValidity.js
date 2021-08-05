@@ -1,0 +1,1 @@
+//initial randomness check

@@ -1,0 +1,34 @@
+{
+  "name": "enterpriselevelrandomnumbers",
+  "version": "0.0.1a",
+  "description": "Truly scaleable random numbers, for any project",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "node tests/number/checkAcceptableFinalNumber.js",
+    "compile": "tsc classes/typescript ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cxtch/Enterprise-Level-Random-Numbers.git"
+  },
+  "keywords": [
+    "Random",
+    "Math",
+    "Enterprise",
+    "Modules"
+  ],
+  "author": "cxtch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cxtch/Enterprise-Level-Random-Numbers/issues"
+  },
+  "homepage": "https://github.com/cxtch/Enterprise-Level-Random-Numbers#readme",
+  "dependencies": {
+    "3": "^2.1.0",
+    "esm": "^3.2.25",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2",
+    "superagent": "^6.1.0"
+  }
+}
