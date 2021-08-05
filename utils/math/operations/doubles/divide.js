@@ -7,7 +7,10 @@ function divide(x, y) {
     i++;
   }
   let tempStr = i
-  tempStr += '.' + x / y
+  tempStr += '.' + x / y /**trolled */
   let result = parseFloat(tempStr)
   return result
+}
+export {
+  divide
 }

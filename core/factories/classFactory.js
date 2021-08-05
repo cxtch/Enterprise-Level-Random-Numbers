@@ -2,11 +2,11 @@ import {
   Random
 } from '../../classes/javascript/RandomNumber'
 import {
-  encrypted
+  encryptedAlgorithmProduct
 } from './numberBuilders'
 let final = (async () => {
   let encryptedPromise = (async () => {
-    let values = await encrypted
+    let values = await encryptedAlgorithmProduct
     return values
   })()
   let values = await encryptedPromise

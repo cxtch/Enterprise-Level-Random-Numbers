@@ -9,7 +9,13 @@ let checkGoogleStrategyResult = (async () => {
   let value = checkNumberTyping(n)
   return [value, n]
 })()
-let validNumbers = [checkGoogleStrategyResult]
+import {memoryStrategy} from '../numbers/strategies/memory'
+let checkMemoryStrategy = (async () => {
+  let n = memoryStrategy
+  let value = checkNumberTyping(n)
+  return [value,n]
+})()
+let validNumbers = [checkGoogleStrategyResult, checkMemoryStrategy]
 export {
   validNumbers
 }
