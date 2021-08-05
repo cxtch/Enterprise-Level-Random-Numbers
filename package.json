@@ -1,7 +1,7 @@
 {
   "name": "enterpriselevelrandomnumbers",
   "version": "0.0.1a",
-  "description": "Truly scaleable random numbers, for any project",
+  "description": "when Math.random() doesn't cut it",
   "main": "index.js",
   "module": "main.js",
   "scripts": {
