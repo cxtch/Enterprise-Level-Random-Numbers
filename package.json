@@ -6,7 +6,7 @@
   "module": "main.js",
   "scripts": {
     "test": "node tests/number/checkAcceptableFinalNumber.js",
-    "compile": "tsc classes/typescript ."
+    "compile": "tsc ."
   },
   "repository": {
     "type": "git",

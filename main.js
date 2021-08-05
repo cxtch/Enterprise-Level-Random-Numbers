@@ -1,5 +1,7 @@
 import {
-  checkValidNumber
-} from "./core/generators/numbers/numberChecker";
-let value = await checkValidNumber
-console.log(value)
+  final
+} from "./core/factories/classFactory";
+final().then(r => {
+  console.log('complete!')
+  console.log(r)
+})

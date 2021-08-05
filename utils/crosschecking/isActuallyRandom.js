@@ -1,1 +1,6 @@
-//double randomness check. 
+function doubleCheckRandom(number) {
+  return number
+}
+export {
+  doubleCheckRandom
+}

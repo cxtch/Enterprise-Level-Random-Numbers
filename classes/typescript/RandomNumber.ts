@@ -1,13 +1,21 @@
-
-export class Random extends Number {
-  readonly number: number;
-  readonly randomnessValue: number;
-  #verify(cryptoKey) {
-
+import { decryptNumber } from '../../utils/crypto/decryptNumber'
+import { checkNumberTyping } from '../../utils/checkIfNumber'
+class Random {
+  number: number | string;
+  #verify = (numbers: ArrayBuffer[]) => {
+    let result = []
+    for (let i = 0; i < numbers.length; i++) {
+      if (checkNumberTyping(numbers[i]))
+        throw new Error('This constructor should only be used internally!')
+      let decrypted = decryptNumber(numbers[i]);
+      result.push(decrypted.toString());
+    }
+    return result.join('')
   }
-  constructor(number, randomnessValue, cryptoKey) {
-    super()
-    this.number = number;
-    this.randomnessValue = randomnessValue;
+  constructor(numbers: ArrayBuffer[]) {
+    this.number = this.#verify(numbers)
   }
+}
+export {
+  Random
 }

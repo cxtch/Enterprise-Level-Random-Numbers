@@ -4,12 +4,12 @@ import {
 import {
   googleStrategyResult
 } from "./strategies/google.com";
-let checkValidNumber = (async () => {
+let checkGoogleStrategyResult = (async () => {
   let n = await googleStrategyResult
-  console.log(n)
   let value = checkNumberTyping(n)
-  return value
+  return [value, n]
 })()
+let validNumbers = [checkGoogleStrategyResult]
 export {
-  checkValidNumber
+  validNumbers
 }
