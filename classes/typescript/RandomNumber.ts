@@ -13,7 +13,7 @@ class Random {
     return result.join('')
   }
   constructor(numbers: ArrayBuffer[]) {
-    this.number = this.#verify(numbers)
+    this.number = +this.#verify(numbers)
   }
 }
 export {
